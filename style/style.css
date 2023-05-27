@@ -1,84 +1,57 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/Lobster-Regular.ttf");
+}
 /* Estilo global */
   body{
     background-color: #FEFAE0;
   }
+
 *{
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    text-decoration: none;
   }
   
   /* Estilo do cabeçalho */
   .cabecalho{
-    background-color: #bc6c25;
-    color: white;
     display: flex;
     flex-direction: row;
+    width: 100%;  
+    background-color: #bc6c25;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
-    font-size: 14pt;
-    }
-
-  .cabecalho a{
-    text-decoration: none;
     color: white;
-  }
-
- .cabecalho-logo {
-   height: 80px;
- }
-
- 
-  /* Barra de pesquisa*/
-  .search-bar {
+    font-family: 'Lobster';
+}
+.container-logo{
+    width: 20%; 
     display: flex;
     align-items: center;
-    background-color: #f3f3f3;
-    padding: 8px;
+    justify-content: flex-start;
+}
+.logo{
+    width: 40%;
+    padding: 5px;
+}
+
+.container-menu{
+    width: 50%;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+.item-menu{
+    color: white;
+    padding:15px;
     border-radius: 20px;
-    
-  }
-  
-  .search-bar input[type="text"] {
-    flex: 1;
-    padding: 8px;
-    border: none;
-    margin: 0;
-    background-color: transparent;
-  }
-  
-  .search-bar button[type="submit"] {
-    border: none;
-    background-color: transparent;
-    margin-left: 8px;
+}
+.item-menu:hover{ /* :hover ativa o estilo quando o mouse estiver em cima do componente*/
     cursor: pointer;
-
-  }
-  
-  .fa-search {
-    font-size: 16px;
-    color: #888;
-  }
-  
-   /*Ancoras do menu */
-   .cabecalho-menu-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 10px;
-   
-   }
-  
-   /*Icone de User*/
-   .cabecalho-icone-user {
-    height: 50px;
-  }
-
-  .carrinho-icone {
-    height: 50px;
-  }
-
+    color: black;
+    background-color: #dda15e
+}
   
   /* MAIN */
   .main {
@@ -218,24 +191,22 @@ ul#produtos-menu li#suplementos:hover{
 
   /* Estilo do rodapé */
   .footer {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
+    font-family: 'Lobster';
+    padding: 10px;
     text-align: center;
     color: #333;
-    font-family: Arial, sans-serif;
     font-size: 14pt;
     border-top: 1px solid #ccc;
+    background-color: #774418;
+    color: white;
   }
   
   .h3-footer {
     font-size: 20px;
     margin-bottom: 30px;
+    margin-top: 0px;
   }
-  
-  .section-footer {
-    margin-bottom: 30px;
-  }
-  
+    
   .footer-ul {
     list-style: none;
     padding: 0;
@@ -247,8 +218,13 @@ ul#produtos-menu li#suplementos:hover{
   }
   
   .footer a{
-    color: black;
     text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
   }
 
-  
+  .footer a:hover{
+    color: black;
+    background-color: #dda15e
+  } 

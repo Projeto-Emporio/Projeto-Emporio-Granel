@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Lobster";
+    src: url("../fonts/Lobster-Regular.ttf");
+}
+*{
+    font-family: 'Lobster';
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('../imagens/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #FEFAE0;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    width: 100%;  
+    background-color: #bc6c25;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.container-logo{
+    width: 20%; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo{
+    width: 40%;
+    padding: 5px;
+}
+
+.container-menu{
+    width: 50%;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+.item-menu{
+    color: white;
+    padding:15px;
+    border-radius: 20px;
+}
+.item-menu:hover{ /* :hover ativa o estilo quando o mouse estiver em cima do componente*/
+    cursor: pointer;
+    color: black;
+    background-color: #dda15e
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.container-conteudo{
+    padding: 20px;
+}
+.title{
+    color:  #dda15e;
+    margin: 15px;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo{
+    font-family: sans-serif;  
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5; /* espaçamento entre linnhas */
+    margin-bottom: 10px;
+    text-align: center;
+}
+.alimentos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.alimentos-container img{
+    width: 150px;
+    height: 150px;
+}
+.categorias{
+    display: flex;
+    flex-direction: row;
+    list-style: none   ;
+}
+.title-alimentos{
+    color:  #dda15e;
+    margin:20px;
+    text-align: center;
+}
+.categoria-img{
+    border: 2px solid #dda15e;
+    margin:1vw;/* uso de Vw para acompanhar o tamanho da tela (VW = Viewport Width)*/
+    box-shadow: 2px 2px 2px black;
+    transition: transform 0.2s ease-in-out; /*propriedade de transição adiciona um efeito tranform para ser mannipulado no :hover */
+}
+.categoria-img:hover{
+    transform: translate(0, -10px); /* propriedade transform criada no transition, movimenta o componente nos eixos (X,Y) Y = -10pixels  */
+    border: 2px solid #774418;
+    margin:1vw; /* uso de Vw para acompanhar o tamanho da tela (VW = Viewport Width)*/
+}
+hr {        /* Estilo do separador (linha horizontal após o conteúdo)*/
+    border: none; 
+    height: 1px; 
+    background-color: #000; 
+    margin: 20px 0; 
+  }
+
+  .footer {
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    font-size: 14pt;
+    border-top: 1px solid #ccc;
+    background-color: #774418;
+    color: white;
+  }
+  
+  .h3-footer {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+    
+  .footer-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-ul p {
+    margin-bottom: 10px;
+  }
+  
+  .footer a{
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+  }
+
+  .footer a:hover{
+    color: black;
+    background-color: #dda15e
+  } 
