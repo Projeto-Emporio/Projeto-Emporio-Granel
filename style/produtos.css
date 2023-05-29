@@ -1,6 +1,8 @@
 .produtos h2{
     text-align: center;
     margin: 20px;
+        font-family: "Lobster";
+        src: url("../fonts/Lobster-Regular.ttf");
   }
 
 .produtos img{
