@@ -22,7 +22,7 @@ body{
     align-items: center;
     justify-content: space-around;
     color: white;
-}
+    }
 .container-logo{
     width: 20%; 
     display: flex;
@@ -37,6 +37,11 @@ body{
 .container-menu{
     width: 50%;
 }
+
+.container-menu a{
+    text-decoration: none;
+}
+
 .menu{
     display: flex;
     justify-content: space-around;

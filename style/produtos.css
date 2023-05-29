@@ -1,0 +1,34 @@
+.produtos h2{
+    text-align: center;
+    margin: 20px;
+  }
+
+.produtos img{
+    border: 2px solid #dda15e;
+    margin:1vw;
+    box-shadow: 2px 2px 2px black;
+    transition: transform 0.2s ease-in-out; 
+    display: auto;
+}
+
+.produtos img:hover{
+    transform: translate(0, -10px);
+    border: 2px solid #774418;
+    margin:1vw;
+}
+
+.produtos-container{
+    text-align: center;
+}
+
+.lista-produtos{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-produtos li{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
