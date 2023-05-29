@@ -2,7 +2,7 @@
   font-family: "Lobster";
   src: url("../fonts/Lobster-Regular.ttf");
 }
-/* Estilo global */
+
   body{
     background-color: #FEFAE0;
   }
@@ -13,7 +13,7 @@
     text-decoration: none;
   }
   
-  /* Estilo do cabeçalho */
+  
   .cabecalho{
     display: flex;
     flex-direction: row;
@@ -47,19 +47,19 @@
     padding:15px;
     border-radius: 20px;
 }
-.item-menu:hover{ /* :hover ativa o estilo quando o mouse estiver em cima do componente*/
+.item-menu:hover{ 
     cursor: pointer;
     color: black;
     background-color: #dda15e
 }
   
-  /* MAIN */
+  
   .main {
     margin: 0 auto;
     padding: 20px;
   }
    
-  /* Estilo do rodapé */
+
   .footer {
     font-family: 'Lobster';
     padding: 10px;
