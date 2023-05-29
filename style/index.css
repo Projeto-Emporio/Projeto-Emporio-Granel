@@ -3,6 +3,10 @@ iframe{
     margin: auto;
   }
 
+  div#produtos-naturais{
+    font-family: 'Lobster';
+  }
+
   div#produtos-naturais :not(span){
     display: flex;
     justify-content: center;
@@ -24,8 +28,8 @@ iframe{
     width: 180px;
     height: 180px;
     margin: 10px;
-    border: 5px solid #774418;
-    background-color: #774418;
+    border: 3px solid #dda15e;
+    background-color: #dda15e;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
     transition: all .4s ease-in;
     display: flex;    

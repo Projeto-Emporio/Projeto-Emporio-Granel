@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Lobster";
+    src: url("../fonts/Lobster-Regular.ttf");
+}
+*{
+    font-family: 'Lobster' ;
+    margin: 0px;
+    padding: 0px;
+}
+.content{
+font-family: sans-serif;  
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.titulo{
+    color:  #dda15e;
+    margin: 15px;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content{
+    padding: 20px;
+}
+
+.alimentos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.alimentos-container{
+    text-align: center;
+}
+
+.alimentos-container img{
+    width: 200px;
+    height: 200px;
+}
+.categorias{
+    display: flex;
+    flex-direction: row;
+    list-style: none   ;
+}
+.title-alimentos{
+    color:  #dda15e;
+    margin:20px;
+    text-align: center;
+    font-size: 30pt;
+}
+.categoria-img{
+    border: 2px solid #dda15e;
+    margin:1vw;
+    box-shadow: 2px 2px 2px black;
+    transition: transform 0.2s ease-in-out; 
+}
+.categoria-img:hover{
+    transform: translate(0, -10px); 
+    border: 2px solid #774418;
+    margin:1vw; 
+}
+hr {        
+    border: none; 
+    height: 1px; 
+    background-color: #000; 
+    margin: 20px 0; 
+  }
