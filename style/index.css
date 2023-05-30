@@ -19,10 +19,7 @@ iframe{
     border: #dda15e 1px;
     }
  
-  div#produtos-naturais{
-    font-family: 'Times New Roman', Times, serif;
-  }
-
+ 
   div#produtos-naturais :not(span){
     display: flex;
     justify-content: center;
