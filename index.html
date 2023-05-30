@@ -8,17 +8,31 @@
 	<link rel="stylesheet" href="style/index.css">
 	<link rel="shortcut icon" href="./imagens/logo-emporio.png" type="imagem/x-icon">
     <title>Empório Granel</title>
+	
 </head>
 <body>
-	<nav>
+	<nav class="nav-bar">
 		<header class="cabecalho">
-			<div class="container-logo">
+						
+			<div id="menu-wrapper">
+				<div id="menu-button" onclick="toggleMenu()">&#9776;</div>
+					<ul id="menu">
+						<li><a id="item-nav" href="#">Chás</a></li>
+						<li><a id="item-nav" href="#">Farinhas</a></li>
+						<li><a id="item-nav" href="#">Temperos</a></li>
+						<li><a id="item-nav" href="#">Oleoginosas</a></li>
+						<li><a id="item-nav" href="#">Outros</a></li>
+					</ul>
+			</div>
+
+				<div class="container-logo">
 				<a href="index.html">
-					<img class="logo" src="./imagens/logo-emporio.png">
+				<img class="logo" src="./imagens/logo-emporio.png">
 				</a> 
 		   </div>
 			<div class="container-menu">
 				<nav class="menu">
+						<a class="item-menu" href="index.html"> Home</a>
 						<a class="item-menu" href="Todos-os-Produtos.html">Todos Produtos</a>
 						<a class="item-menu" href="sobre-nos.html">Sobre Nós</a>
 						<a class="item-menu" href="bem-estar.html">Bem-Estar</a>
@@ -29,7 +43,7 @@
 	<main class="main">
 		<iframe src="carrossel.html" frameborder="0" width="400" height="400"></iframe>
 			<div id="produtos-naturais">
-			<h2>Nossos produtos</h2>
+			<h1>Nossos produtos</h1>
 			<ul id="produtos-menu">
 				<a href="chas.html"> <li id="chas"><span>Chás</span></li></a>
 				<a href="farinhas.html"> <li id="farinhas"><span>Farinhas</span></li></a>
@@ -49,5 +63,16 @@
 		</ul>
 	</footer>
 	<script src="script/carrossel.js"></script>
+	<script>
+		function toggleMenu() {
+		  var menu = document.getElementById("menu");
+		  if (menu.style.display === "none") {
+			menu.style.display = "block";
+		  } else {
+			menu.style.display = "none";
+		  }
+		}
+	  </script>
+		
 </body>
 </html>

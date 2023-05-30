@@ -8,10 +8,11 @@ h2{
 iframe{
     display: block;
     margin: auto;
+    padding-top: 50px;
   }
 
   div#produtos-naturais{
-    font-family: 'Lobster';
+    font-family: 'Times New Roman', Times, serif;
   }
 
   div#produtos-naturais :not(span){

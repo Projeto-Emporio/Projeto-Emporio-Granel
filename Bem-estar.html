@@ -9,20 +9,35 @@
     <title>Bem-Estar</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <div class="container-logo">
-            <a href="index.html">
-                <img class="logo" src="./imagens/logo-emporio.png">
-            </a> 
-       </div>
-        <div class="container-menu">
-            <nav class="menu">
-                    <a href="Todos-os-Produtos.html" class="item-menu">Todos Produtos</a>
-                    <a href="sobre-nos.html" class="item-menu">Sobre Nós</a>
-                    <a href="bem-estar.html" class="item-menu">Bem-Estar</a>
-            </nav>
-        </div>
-    </header>
+    <nav class="nav-bar">
+		<header class="cabecalho">
+						
+			<div id="menu-wrapper">
+				<div id="menu-button" onclick="toggleMenu()">&#9776;</div>
+					<ul id="menu">
+						<li><a id="item-nav" href="#">Chás</a></li>
+						<li><a id="item-nav" href="#">Farinhas</a></li>
+						<li><a id="item-nav" href="#">Temperos</a></li>
+						<li><a id="item-nav" href="#">Oleoginosas</a></li>
+						<li><a id="item-nav" href="#">Outros</a></li>
+					</ul>
+			</div>
+
+				<div class="container-logo">
+				<a href="index.html">
+				<img class="logo" src="./imagens/logo-emporio.png">
+				</a> 
+		   </div>
+			<div class="container-menu">
+				<nav class="menu">
+						<a class="item-menu" href="index.html"> Home</a>
+						<a class="item-menu" href="Todos-os-Produtos.html">Todos Produtos</a>
+						<a class="item-menu" href="sobre-nos.html">Sobre Nós</a>
+						<a class="item-menu" href="bem-estar.html">Bem-Estar</a>
+				</nav>
+			</div>
+		</header>
+	</nav>
     <main class="main">
         <nav class="pagina">
         <div class="container-title">
@@ -70,4 +85,14 @@
         <a href="https://www.instagram.com/emporioagranel.arcos/" target="_blank">Nos siga no Instagram</a>
     </ul>
 </footer>
+<script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      if (menu.style.display === "none") {
+        menu.style.display = "block";
+      } else {
+        menu.style.display = "none";
+      }
+    }
+  </script>
 </html>
