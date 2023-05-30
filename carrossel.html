@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
-  <link rel="stylesheet" href="style/carrossel.css">
+  <title>Exemplo de Carrossel de Imagens</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    .owl-carousel img {
+      width: 250px;
+      height: 250px;
+    }
+
+    .owl-carousel{
+        width: 750px;
+        height: 250px;
+        display: block;
+        margin: auto;
+    }
+  </style>
+  </style>
 </head>
 <body>
-  <main>
-    <h1>Produtos mais vendidos</h1>
-    <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="imagens/AVEIA.jpg" alt="Foto 01">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="imagens/CHÁ-CAVALINHA.jpg" alt="Foto 02">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="imagens/GRANOLA-TRADICIONAL.jpg" alt="Foto 03">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="imagens/MACA-PERUANA.jpg" alt="Foto 04">
-            </div>
-          </div>
-        </div>
-      
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </main>
+  <div class="owl-carousel">
+    <div><img src="imagens/ALHO-GRANULADO.jpg" alt="Imagem 1"></div>
+    <div><img src="imagens/AMENDOIM-COM-SAL.jpg" alt="Imagem 2"></div>
+    <div><img src="imagens/TOMILHO.jpg" alt="Imagem 3"></div>
+    <div><img src="imagens/TEMPERO-EDU-GUEDES.jpg"alt="Imagem 4"></div>
+    <div><img src="imagens/PIMENTA-PRETA-MOIDA.jpg" alt="Imagem 5"></div>
+  </div>
 
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="script/carrossel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 10,
+        nav: false, // Alteração: Definindo nav como false para remover os botões de navegação
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
