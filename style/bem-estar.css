@@ -22,6 +22,7 @@ body{
     align-items: center;
     justify-content: space-around;
     color: white;
+    font-size: 20pt;
     }
 .container-logo{
     width: 20%; 
@@ -36,6 +37,7 @@ body{
 
 .container-menu{
     width: 50%;
+    margin-left: 70px;
 }
 
 .container-menu a{
@@ -51,7 +53,7 @@ body{
     padding:15px;
     border-radius: 20px;
 }
-.item-menu:hover{ /* :hover ativa o estilo quando o mouse estiver em cima do componente*/
+.item-menu:hover{ 
     cursor: pointer;
     color: black;
     background-color: #dda15e
@@ -77,7 +79,7 @@ body{
     font-family: sans-serif;  
     font-weight: bold;
     font-size: 16px;
-    line-height: 1.5; /* espaçamento entre linnhas */
+    line-height: 1.5; 
     margin-bottom: 10px;
     text-align: center;
 }
@@ -89,8 +91,8 @@ body{
 }
 
 .alimentos-container img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 .categorias{
     display: flex;
@@ -101,19 +103,20 @@ body{
     color:  #dda15e;
     margin:20px;
     text-align: center;
+    font-size: 30pt;
 }
 .categoria-img{
     border: 2px solid #dda15e;
-    margin:1vw;/* uso de Vw para acompanhar o tamanho da tela (VW = Viewport Width)*/
+    margin:1vw;
     box-shadow: 2px 2px 2px black;
-    transition: transform 0.2s ease-in-out; /*propriedade de transição adiciona um efeito tranform para ser mannipulado no :hover */
+    transition: transform 0.2s ease-in-out; 
 }
 .categoria-img:hover{
-    transform: translate(0, -10px); /* propriedade transform criada no transition, movimenta o componente nos eixos (X,Y) Y = -10pixels  */
+    transform: translate(0, -10px); 
     border: 2px solid #774418;
-    margin:1vw; /* uso de Vw para acompanhar o tamanho da tela (VW = Viewport Width)*/
+    margin:1vw; 
 }
-hr {        /* Estilo do separador (linha horizontal após o conteúdo)*/
+hr {        
     border: none; 
     height: 1px; 
     background-color: #000; 
