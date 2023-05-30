@@ -14,6 +14,7 @@ font-family: sans-serif;
     line-height: 1.5; 
     margin-bottom: 10px;
     text-align: center;
+    
 }
 
 .titulo{
@@ -27,48 +28,37 @@ font-family: sans-serif;
 
 .container-content{
     padding: 20px;
+    padding-top: 75px;
 }
 
-.alimentos-container{
+.container-loja{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    flex-wrap: wrap;
 }
 
-.alimentos-container{
-    text-align: center;
+.info{
+    flex: 1;
+    font-family: sans-serif;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 2.5;
 }
 
-.alimentos-container img{
-    width: 200px;
-    height: 200px;
+.info a{
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    padding: 5px;
 }
-.categorias{
-    display: flex;
-    flex-direction: row;
-    list-style: none   ;
+
+.info a:hover{
+    background-color: #dda15e
 }
-.title-alimentos{
-    color:  #dda15e;
-    margin:20px;
-    text-align: center;
-    font-size: 30pt;
+
+.mapa{
+    flex: 1;
 }
-.categoria-img{
-    border: 2px solid #dda15e;
-    margin:1vw;
-    box-shadow: 2px 2px 2px black;
-    transition: transform 0.2s ease-in-out; 
+
+body{
+    padding-bottom: 15px;
 }
-.categoria-img:hover{
-    transform: translate(0, -10px); 
-    border: 2px solid #774418;
-    margin:1vw; 
-}
-hr {        
-    border: none; 
-    height: 1px; 
-    background-color: #000; 
-    margin: 20px 0; 
-  }
