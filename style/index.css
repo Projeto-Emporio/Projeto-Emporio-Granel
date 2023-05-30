@@ -1,23 +1,24 @@
-h2{
-  text-align: center;
-  margin: 20px;
-      font-family: "Lobster";
-      src: url("../fonts/Lobster-Regular.ttf");
+h1{
+  text-decoration: none;
+  color: black;
 }
+
 
 .container-iframe{
   padding-top: 100px;
   margin: auto;
   display: block;
   text-align: center;
+  text-decoration: none;
 }
 
 iframe{
     display: block;
     margin: auto;
     padding-top: 50px;
-  }
-
+    border: #dda15e 1px;
+    }
+ 
   div#produtos-naturais{
     font-family: 'Times New Roman', Times, serif;
   }
