@@ -9,7 +9,7 @@
     border: 2px solid #dda15e;
     margin:1vw;
     box-shadow: 2px 2px 2px black;
-    transition: transform 0.2s ease-in-out; 
+    transition: transform 0.2s; 
     display: auto;
 }
 
@@ -17,6 +17,8 @@
     transform: translate(0, -10px);
     border: 2px solid #774418;
     margin:1vw;
+    position: relative;
+    
 }
 
 .produtos-container{

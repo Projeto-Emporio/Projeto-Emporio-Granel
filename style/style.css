@@ -11,9 +11,9 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Lobster';
   }
-  
-  
+     
   .cabecalho{
     display: flex;
     flex-direction: row;
@@ -22,15 +22,54 @@
     align-items: center;
     justify-content: space-around;
     color: white;
-    font-family: 'Lobster';
-    font-size: 20pt;
-    }
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
 
-.container-logo{
+  #menu-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  #menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #bc6c25;
+    padding: 10px;
+    list-style-type: none;
+    border-radius: 5px;
+    border: solid 1px black;
+  }
+
+  #menu-button {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+
+a#item-nav{
+  color: white;
+  text-decoration: none;
+}
+
+a#item-nav:hover{
+  color: black;
+  
+}
+
+  .container-logo{
     width: 20%; 
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding: 5px;
 }
 
 .logo{
@@ -40,7 +79,7 @@
 
 .container-menu{
     width: 50%;
-    margin-left: 70px;
+    margin-left: -20px;
 }
 
 .menu{
@@ -66,7 +105,7 @@
    
 
   .footer {
-    font-family: 'Lobster';
+    font-family: 'Times New Roman', Times, serif;
     padding: 10px;
     text-align: center;
     color: #333;
