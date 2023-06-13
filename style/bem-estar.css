@@ -140,6 +140,14 @@ a#item-nav:hover{
     flex-direction: row;
     list-style: none   ;
 }
+
+@media screen and (max-width: 768px) {
+  .categorias {
+    width: 50%;
+    display: block;
+  }
+}
+
 .title-alimentos{
     color:  #dda15e;
     margin:20px;
