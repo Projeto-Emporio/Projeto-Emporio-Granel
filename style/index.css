@@ -27,6 +27,18 @@ iframe{
     flex-wrap: wrap;
   }
 
+@media screen and (max-width: 768px) {
+  div#produtos-naturais {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+    
+    }
+  }
+  
+  
   ul#produtos-menu{
     width: 1200px;
     margin: 0 auto;
@@ -36,7 +48,7 @@ iframe{
     left: 200px;
     }
 
-  ul#produtos-menu li{
+    ul#produtos-menu li{
     float:left;
     width: 180px;
     height: 180px;
@@ -47,6 +59,15 @@ iframe{
     transition: all .4s ease-in;
     display: flex;    
     }
+
+@media screen and (max-width: 768px) {
+  ul#produtos-menu  {
+    display: block;
+    flex-direction: row;
+    list-style: none   ;
+    width: 50%;
+      }
+}
 
   ul#produtos-menu li span{
     opacity: 1;
