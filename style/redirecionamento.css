@@ -3,29 +3,59 @@
     src: url("../fonts/Lobster-Regular.ttf");
 }
 
-.container{
-    margin-top: 0px;
-    height: 0px;
-    position: absolute;
-    top: 14%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1 {
-    color: #111;
-    font-size: 24px;
-    margin-bottom: 20px;
+.container-redirecionamento{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    
 }
 
 p {
     color: #111;
     font-size: 18px;
     line-height: 1.5;
+    font-family: sans-serif;
+    text-align: center;
+    padding-left: 50px;
+    max-width: 500px;
+    padding-right: 200px;
 }
+
+.btn {
+    color: #25d366;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #25d366;
+    padding: 10px 20px;
+    font-size: 32px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  
+  .btn:hover {
+    color: white;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #25d366;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
 
 
 

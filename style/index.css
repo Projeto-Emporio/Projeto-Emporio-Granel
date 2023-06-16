@@ -12,15 +12,34 @@ h1{
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .container-iframe {
+    display: flex;
+    align-items: center;
+    display: block;
+    text-align: center;
+    justify-content: center;
+      }
+}
+
 iframe{
     display: block;
     margin: auto;
     padding-top: 50px;
     border: #dda15e 1px;
-    }
+}
  
- 
-  div#produtos-naturais :not(span){
+@media screen and (max-width: 768px) {
+  .iframe {
+    width: 300px !important;
+    height: 320px !important;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+  }
+}
+    
+   div#produtos-naturais :not(span){
     display: flex;
     justify-content: center;
     align-items: center;

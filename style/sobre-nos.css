@@ -2,13 +2,12 @@
     font-family: "Lobster";
     src: url("../fonts/Lobster-Regular.ttf");
 }
-*{
-    font-family: 'Lobster' ;
-    margin: 0px;
-    padding: 0px;
+
+p{
+    font-family: sans-serif;
 }
 .content{
-font-family: sans-serif;  
+
     font-weight: bold;
     font-size: 16px;
     line-height: 1.5; 
@@ -34,14 +33,20 @@ font-family: sans-serif;
 .container-loja{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+h2{
+    text-align: center;
 }
 
 .info{
     flex: 1;
-    font-family: sans-serif;
-    padding-left: 40px;
+    padding-left: 30px;
     font-size: 20px;
     line-height: 2.5;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .info a{
@@ -49,6 +54,7 @@ font-family: sans-serif;
     color: black;
     border-radius: 20px;
     padding: 5px;
+    font-size: 24px;
 }
 
 .info a:hover{

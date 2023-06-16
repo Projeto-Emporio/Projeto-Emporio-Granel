@@ -39,6 +39,13 @@
     display: inline-block;
   }
 
+  @media screen and (max-width: 768px) {
+    #menu-wrapper {
+      padding-left: 15px;
+    }
+  }
+
+
   #menu {
     display: none; 
     position: absolute;
@@ -49,6 +56,18 @@
     list-style-type: none;
     border-radius: 5px;
     border: solid 2px black;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .menu {
+      font-size: 15px;
+      display: block;
+      margin: auto;
+      padding-top: 20px;
+      padding-right: 10px;
+      text-align: center;
+    }
   }
 
   #menu-button {
@@ -76,9 +95,23 @@ a#item-nav:hover{
     padding: 5px;
 }
 
+@media screen and (max-width: 768px) {
+  .container-logo {
+    padding: 0px 20px 0px 20px;
+  }
+}
+
 .logo{
     width: 40%;
     padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    padding-top: 10px;
+    width: 80%;
+    height: 80%;
+  }
 }
 
 .container-menu{
@@ -89,7 +122,7 @@ a#item-nav:hover{
 
 @media screen and (max-width: 768px) {
   .container-menu {
-    
+    padding-right: 20px;
     display: block;
     margin: auto;
   }
