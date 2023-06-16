@@ -11,7 +11,7 @@
     
 }
 
-p {
+.explicacao {
     color: #111;
     font-size: 18px;
     line-height: 1.5;
@@ -21,6 +21,24 @@ p {
     max-width: 500px;
     padding-right: 200px;
 }
+
+@media screen and (max-width: 768px){
+  .container-redirecionamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10%;
+  }
+
+  .explicacao {
+  padding-right: 5px;
+  max-height: 100px;
+  margin-bottom: 20vh;
+  padding: 10vh;
+  } 
+}
+
+
 
 .btn {
     color: #25d366;
@@ -38,6 +56,7 @@ p {
   
   .btn:hover {
     color: white;
+    cursor: pointer;
   }
   
   .btn::before {
