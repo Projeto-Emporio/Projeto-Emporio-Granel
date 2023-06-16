@@ -20,6 +20,7 @@
     padding-left: 50px;
     max-width: 500px;
     padding-right: 200px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px){

@@ -8,11 +8,7 @@
     padding: 0px;
 }
 body{
-    background-image: url('../imagens/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-color: #FEFAE0;
+   background-color: #FEFAE0;
 }
 .cabecalho{
   display: flex;
